@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "BetterSparx",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": ["https://maths.sparx-learning.com/*"],
+      "js": ["maths.js"]
+    },
+    {
+      "matches": ["https://reader.sparx-learning.com/*"],
+      "js": ["reader.js"]
+    },
+    {
+      "matches": ["https://science.sparx-learning.com/*"],
+      "js": ["science.js"]
+    }
+  ],
+  "permissions": ["scripting"]
+}
